@@ -1,6 +1,4 @@
-
-
-/* 헤더,푸터 불러오기 */
+/* 헤더,푸터 include */
 
 $(document).ready(function () {
     $('#header').load("header.html")
@@ -8,58 +6,36 @@ $(document).ready(function () {
 });
 
 
+/* 슬릭 */
 
+$('.slickBox').slick({
+    infinite: true,
+    slidesToShow: 1,
+    dots: true,
+    arrows: true,
+    nextArrow: ('#aro1_next'), //arrow 클래스 지정
+    prevArrow: ('#aro1_prev'),
+    navigation: true,
+    autoplay: false,
+    autoplaySpeed: 1000,
+});
 
-
-/* 탑버튼 */
-
-$('html,body').scrollTop(0);
-
-$(window).scroll(function () {
-
-    var scroll = $(this).scrollTop();
-
-    if (scroll >= 300) {
-
-        $('.go_top').fadeIn();
-
-    } else {
-
-        $('.go_top').fadeOut();
-
-    }
-
+$('.slickBox2').slick({
+    infinite: true,
+    slidesToShow: 4,
+    dots: false,
+    arrows: true,
+    nextArrow: ('#aro1_next'), //arrow 클래스 지정
+    prevArrow: ('#aro1_prev'),
+    navigation: true,
+    autoplay: false,
+    autoplaySpeed: 1000,
 });
 
 
+/* 패밀리사이트 토글메뉴 */
 
-$('.go_top').click(function (e) {
+$('.family_site').click(function () {
+    $('.family_toggle').slideToggle('on')
+})
 
-    e.preventDefault();
-
-    $('html,body').stop().animate({
-
-        scrollTop: 0
-
-    }, 500)
-
-});
-
-
-
-/* 스크롤에 따른 헤더 속성 */
-
-$(function () {
-    var lastScroll = 0;
-    $(window).scroll(function (event) {
-        var scroll = $(this).scrollTop();
-        if (scroll > 200) {
-            //이벤트를 적용시킬 스크롤 높이
-            $(".header").addClass("active");
-        } else {
-            $(".header").removeClass("active");
-        }
-        lastScroll = scroll;
-    });
-
-});
