@@ -25,8 +25,8 @@ $('.slickBox2').slick({
     slidesToShow: 4,
     dots: false,
     arrows: true,
-    nextArrow: ('#aro1_next'), //arrow 클래스 지정
-    prevArrow: ('#aro1_prev'),
+    nextArrow: ('#aro2_next'), //arrow 클래스 지정
+    prevArrow: ('#aro2_prev'),
     navigation: true,
     autoplay: false,
     autoplaySpeed: 1000,
