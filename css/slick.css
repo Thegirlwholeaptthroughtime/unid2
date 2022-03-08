@@ -89,6 +89,7 @@
 .slick-slide img
 {
     display: block;
+
 }
 .slick-slide.slick-loading img
 {
@@ -120,15 +121,8 @@
 
 
 
-.prev{
-    background: url(../img/main/main_arrow1.png)
+.next img,
+.prev img{
+    width: 100%;
 }
-.next{
-    background: url(../img/main/main_arrow2.png)
-}
-.prev, .next {
-    width: 60px;
-    cursor: pointer;
-    text-indent: -9999999999px;
-    background-repeat: no-repeat;
-}
+

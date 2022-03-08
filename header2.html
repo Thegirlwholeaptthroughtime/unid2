@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+
+
+
+    <div class="header">
+        <div class="gnb">
+            <div class="gnbLeft">
+                <div class="mainLogo">
+                    <img src="img/main/main_logo2.png" alt="">
+                    <a href="index.html"></a>
+                </div>
+            </div>
+            <div class="gnbRight">
+                <div class="gnbRightSubmenu1">
+                    <a href="sub1.html">유니드소개</a>
+                </div>
+                <div class="gnbRightSubmenu2">
+                    <a href="sub2.html">영상제작</a>
+                </div>
+                <!--   <div class="gnbRightSubmenu3">
+                            <a href="sub3.html">통합마케팅</a>
+                        </div> -->
+                <div class="gnbRightSubmenu4">
+                    <a href="sub4.html">포트폴리오 </a>
+                </div>
+                <div class="gnbRightSubmenu4">
+                    <a href="sub5.html">제작문의</a>
+                </div>
+                <div class="responsive_gnbRight">
+                    <div></div>
+                    <div></div>
+                    <div class="ham_menu_box">
+                        <input type="checkbox" id="ham_menu">
+                        <label for="ham_menu" class="ham_menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="responsive_menu">
+        <div class="rm_wrap">
+            <div class="rm_box"></div>
+        </div>
+
+        <div class="rm_line"></div>
+        <div class="rm_wrap">
+            <div class="rm_box"></div>
+        </div>
+        <div class="rm_content_wrap">
+            <div class="rm_header">
+                <div class="backpage"></div>
+            </div>
+            <div class="rm_content">
+                <div class="rmc_right">
+                    <div>
+                        <a href="sub1.html">ABOUT</a>
+
+                    </div>
+                    <div>
+                        <a href="sub2.html">MAKING</a>
+
+                    </div>
+                    <div>
+                        <a href="sub4.html">PORTFOLIO</a>
+
+                    </div>
+                    <div>
+                        <a href="sub5.html">CONTACT</a>
+
+                    </div>
+                </div>
+                <div class="rmc_left">
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum deleniti adipisci sed
+                            repellendus eum, expedita enim cupiditate esse, nulla ab atque impedit nihil at porro! Esse
+                            amet officiis non sapiente maxime magnam quo? Sint dolor ipsa quis, illum et eos numquam
+                            quasi culpa nisi consequatur iusto quam, distinctio aliquid quas!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="rm_footer">
+                <div class="rmf_left">
+                    <p>Copyright ⓒ 2022 UNID All rights reserved</p>
+                </div>
+                <div class="rmf_right">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quae!
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        var resmenu = $('.responsive_menu');
+        var hammenu = $('.ham_menu');
+        var backmain = $('.backpage');
+
+        var resmenuon = $('.responsive_menu').hasClass('.on')
+
+
+       if (!resmenuon) {
+            hammenu.click(function () {
+
+                resmenu.addClass("on");
+
+                setTimeout(function () {
+                    resmenu.addClass("on1");
+                }, 100);
+                setTimeout(function () {
+                    resmenu.addClass("on2");
+                }, 300);
+                setTimeout(function () {
+                    resmenu.addClass("on3");
+                }, 600);
+                setTimeout(function () {
+                    resmenu.addClass("on4");
+                }, 900);
+                setTimeout(function () {
+                    resmenu.addClass("on5");
+                }, 1100);
+            });
+        }
+
+
+        backmain.click(function () {
+
+
+            setTimeout(function () {
+                resmenu.removeClass("on5");
+            }, 100);
+            setTimeout(function () {
+                resmenu.removeClass("on4");
+            }, 300);
+            setTimeout(function () {
+                resmenu.removeClass("on3");
+            }, 600);
+            setTimeout(function () {
+                resmenu.removeClass("on2");
+            }, 900);
+            setTimeout(function () {
+                resmenu.removeClass("on1");
+            }, 1000);
+            setTimeout(function () {
+                resmenu.removeClass("on");
+            }, 1500);
+        });
+    </script>
+
+
+    <!--   <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            let resmenu = document.querySelector('.responsive_menu')
+            let hammenu = document.querySelector('.ham_menu')
+
+            let resmenuon = resmenu.classList.contains('on')
+
+
+            if (!resmenuon) {
+                function opensubmenu() {
+                    resmenu.classList.add('on')
+
+                    setTimeout(function () {
+                        resmenu.classList.add('on2')
+                    }, 500)
+                }
+            } else {
+                function opensubmenu() {
+                    resmenu.classList.remove('on')
+                }
+            }
+
+
+            hammenu.addEventListener('click', opensubmenu)
+        });
+    </script> -->
+</body>
+
+</html>

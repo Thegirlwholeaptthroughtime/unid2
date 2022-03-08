@@ -7,41 +7,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unid</title>
 
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 
-    <div class="wrap2">
+    <div class="wrap2 contact_wrap" id="sub_wrap ">
 
         <header>
             <div id="header"></div>
         </header>
-
-
-
         <section>
-            <div class="section ss1"></div>
-            <div class="section s2"></div>
-            <div class="section s3"></div>
-            <div class="section s4"></div>
+         <!--    <div class="section sub5 sub_section1 bg15 h970">
+
+                <div class="title_box">
+                    <div class="txtBox">
+                        <p class="wow animate__animated animate__fadeInDown">
+                            Contact Us </p>
+                        <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                            제작문의
+                        </p>
+                    </div>
+
+                </div>
+                <div class="s2mainBox">
+                    <div class="s2topBox">
+                        <div class="s2aniBox s2ab1">
+
+
+                            <div class="lineBox1">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="txtBox">
+                                <p> 같이 ‘Together’에서 가치 ‘Value’를 찾다 !</p>
+                                <p> 유니드와 시작하세요.</p>
+
+
+                            </div>
+                            <span class="lineBox2">
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="scrollDown">
+                    <div class="sdTxt">SCROLL DOWN</div>
+                    <div class="sdLine"></div>
+                </div>
+            </div> -->
+            <div class="section sub5 sub_section2" id="mailback">
+                <div class="sub_container">
+                    <ul class="tabs">
+                        <li class="tab-link current" data-tab="tab-1">문의하기</li>
+                        <li class="tab-link" data-tab="tab-2">오시는길</li>
+
+                    </ul>
+                </div>
+
+                <div class="main_container">
+                    <div id="tab-1" class="tab-content tab1 current">
+
+                        <div class="mail_txt">문의하기</div>
+                        <form name="contactform" method="post" action="send.php" class="mail_box">
+                            <div class="mail">
+
+                                <div class="main_box">
+                                    <ul>
+                                        <!--  <li class="left"><label for="company_name">회사명</label></li> -->
+                                        <li class="right"><input name="company_name" type="text" class="ipt"
+                                                maxlength="50" placeholder="회사/단체명" required></li>
+                                    </ul>
+                                    <ul>
+                                        <!-- <li class="left"><label for="first_name">이름</label></li> -->
+                                        <li class="right"><input name="first_name" type="text" class="ipt"
+                                                maxlength="50" placeholder="의뢰자명" required></li>
+                                    </ul>
+                                </div>
+
+                                <div class="main_box">
+                                    <ul>
+                                        <!-- <li class="left"><label for="email">이메일 주소</label></li> -->
+                                        <li class="right"><input name="email" type="text" class="ipt" maxlength="80"
+                                                placeholder="이메일 주소" required></li>
+                                    </ul>
+                                    <ul>
+                                        <!-- <li class="left"><label for="telephone">연락처</label></li> -->
+                                        <li class="right"><input name="telephone" type="text" class="ipt" maxlength="30"
+                                                placeholder="연락처" required></li>
+                                    </ul>
+                                </div>
+
+                                <div class="main_box">
+                                    <ul class="main_box_contact">
+                                        <!-- <li class="left"><label for="comments">문의내용</label></li> -->
+                                        <li class="right"><textarea name="comments" cols="50" rows="10"
+                                                style="width:100%" placeholder="문의내용" required></textarea></li>
+                                    </ul>
+                                </div>
+
+                                <div class="send_box">
+                                    <ul>
+                                        <li class="bt_left"><input type="submit" value="문의하기" class="btn_submit"></li>
+                                        <!-- <li class="bt_right"><input name="재설정" type="reset" value="다시작성" class="btn_submit"></li> -->
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </form>
+                    </div>
+                    <div id="tab-2" class="tab-content ">
+
+                        <div class="mail_txt">오시는길</div>
+                        <div class="map_box">
+                            <div class="map_left">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203.82874773914006!2d129.12492726241194!3d35.1750726621849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356893574432aa67%3A0x8674d8438b2c9bac!2z7IS87YWA7Iqk7Lm07J2067mE7KaIIOu5jOuUqSDilIIgQ2VudHVtIFNreSBCSVo!5e0!3m2!1sko!2skr!4v1644461980740!5m2!1sko!2skr"
+                                    width="600" height="450" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                            <div class="map_right">
+                                <p>유니드㈜ 경영실 </p>
+                                <p>TEL</p>
+                                <p>E-MAIL</p>
+
+                              <!--   <p>유니드어스㈜ 컨텐츠 사업부 </p>
+                                <p>유니드랩 온라인판매사업부 </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-
-
         <footer>
             <div id="footer"></div>
         </footer>
-
         <div class="left_nav"></div>
-
-
-        <div id="moveTo"></div>
+        <div class="go_top"></div>
     </div>
+
 
 
 
@@ -49,7 +162,84 @@
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script src="js/slick.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/custom_sub.js"></script>
+    <script src="js/skroll.js"></script>
+
+
+
+    <script>
+        /* 와우 애니메이션 */
+
+        var wow = new WOW({
+
+            boxClass: 'wow', // animated element css class (default is wow)
+
+            animateClass: 'animated', // animation css class (default is animated)
+
+            offset: 0, // distance to the element when triggering the animation (default is 0)
+
+            mobile: true, // trigger animations on mobile devices (default is true)
+
+            live: true, // act on asynchronously loaded content (default is true)
+
+            callback: function (box) {
+
+                // the callback is fired every time an animation is started
+
+                // the argument that is passed in is the DOM node being animated
+
+            },
+
+            scrollContainer: null, // optional scroll container selector, otherwise use window,
+
+            resetAnimation: true, // reset animation on end (default is true)
+
+        });
+
+        wow.init();
+    </script>
+
+    <script>
+        //브라우저의 높이값을 section의 높이값으로 지정
+        var ht = $(window).scrollTop();
+        $(".hs_line").height(ht);
+
+
+        //브라우저가 리사이즈 될 때마다 브라우저와 section의 높이값을 갱신
+        $(window).on("scroll", function () {
+
+
+            var ht = $(window).stop().scrollTop();
+            $(".hs_line").stop().height(ht);
+
+
+        });
+    </script>
+
+
+    <script>
+        /* 연혁 스크롤이벤트 */
+
+        $(document).ready(function () {
+            //스크롤발생 이벤트 처리
+            $('body').scroll(function () {
+                var scrollH = $(this).stop().height();
+
+                console.log(scrollH)
+            });
+        });
+
+        window.onload = function () {
+
+            $('.s2mainBox').addClass('on')
+        }
+    </script>
+
+
+
 
 
 </body>
